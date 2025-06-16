@@ -5,6 +5,7 @@ import './globals.css'
 import { ThemeProvider } from 'next-themes'
 import { ThemeToggle } from '@/components/shared/theme-toggle'
 import { Toaster } from '@/components/ui/toaster'
+import { Suspense } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,13 +30,15 @@ export default function RootLayout({
                     <div className='absolute top-4 right-4'>
                         <ThemeToggle />
                     </div>
-                    <div className='min-h-screen bg-background'>
-                        <div className='container mx-auto px-4 py-8'>
-                            {children}
-                        </div>
+                    <Suspense>
+                        <div className='min-h-screen bg-background'>
+                            <div className='container mx-auto px-4 py-8'>
+                                {children}
+                            </div>
 
-                        <Toaster />
-                    </div>
+                            <Toaster />
+                        </div>
+                    </Suspense>
                 </ThemeProvider>
             </body>
         </html>
