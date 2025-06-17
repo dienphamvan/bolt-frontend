@@ -27,7 +27,7 @@ This is a Next.js project for the Bolt assignment.
 ### 1. Install dependencies
 
 ```sh
-npm install
+yarn install
 ```
 
 ### 2. Copy environment variables
@@ -40,23 +40,23 @@ Edit `.env` with your own values as needed.
 ### 3. Run the development server
 
 ```sh
-npm run dev
+yarn run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### 4. Build for production
 
 ```sh
-npm run build
-npm start
+yarn run build
+yarn start
 ```
 
 ## Scripts
 
-- `npm run dev` – Start the development server
-- `npm run build` – Build for production
-- `npm start` – Start the production server
-- `npm run lint` – Lint the codebase
+- `yarn run dev` – Start the development server
+- `yarn run build` – Build for production
+- `yarn start` – Start the production server
+- `yarn run lint` – Lint the codebase
 
 ## Technologies Used
 
