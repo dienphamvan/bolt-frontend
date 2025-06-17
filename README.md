@@ -2,6 +2,8 @@
 
 This is a Next.js project for the Bolt assignment.
 
+## Deployment Link: https://carental.dienphamvan.site/
+
 ## Project Structure
 
 ```
